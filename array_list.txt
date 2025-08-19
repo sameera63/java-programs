@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Stack;
+public class array_list {
+   public static void main(String args[]) {
+	   ArrayList<Object> a1=new ArrayList<>();
+	   a1.add("aits");
+	   a1.add(4);
+	   a1.add(3.8);
+	   System.out.println(a1);
+	   ArrayList<Object> a2=new ArrayList<>();
+	   a2.add("name");
+	   a2.add("sammi");
+	   a2.add(35);
+	   a2.addAll(a1);
+	   System.out.println(a2);
+	   a2.add(2,"hai");
+	   System.out.println("after arraylist:"+a2);
+	   LinkedList<String> li=new LinkedList<>();
+	   li.add("name");
+	   li.add("sammi");
+	   li.add("sam");
+	   System.out.println(li);
+	   li.remove(2);
+	   System.out.println("after linkedlist:"+li);
+	   Stack<String> s=new Stack();
+	   s.push("age");
+	   s.push("sammi");
+	   s.push("sam");
+	   System.out.println("stack:"+s);
+	   s.pop();
+	   System.out.println("stack:"+s);
+	   System.out.println(s.empty());
+	}
+   }
+
